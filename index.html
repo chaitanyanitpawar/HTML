@@ -1,0 +1,361 @@
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+            background: linear-gradient(white, #D3D8E8);
+        }
+
+        #header_wrapper {
+            width: 100%;
+            min-width: 980px;
+            background-color: #4c66a4;
+        }
+
+        #header {
+            width: 980px;
+            margin: 0px auto;
+            padding: 0px;
+            height: 85px;
+        }
+
+        #header li {
+            list-style-type: none;
+            float: left;
+            text-align: left;
+            color: white;
+        }
+
+        #header #sitename {
+            margin-top: 25px;
+        }
+
+        #header #sitename a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        #header form {
+            margin-top: 15px;
+            float: right;
+        }
+
+        #header form li {
+            font-size: 13px;
+            margin-left: 15px;
+        }
+
+        #header form li a {
+            color: #A9BCF5;
+            text-decoration: none;
+        }
+
+        #header form input[type="text"] {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width: 150px;
+            border: 1px solid #08298A;
+            height: 25px;
+            padding-left: 3px;
+        }
+
+        #header form input[type="password"] {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width: 150px;
+            border: 1px solid #08298A;
+            height: 25px;
+            padding-left: 3px;
+        }
+
+        #header form input[type="submit"] {
+            height: 25px;
+            margin-top: 20px;
+            background-color: #084B8A;
+            color: white;
+            border: 1px solid #08298A;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+            padding: 0px;
+            text-align: center;
+            width: 980px;
+        }
+
+        #wrapper div {
+            float: left;
+            font-family: helvetica, arial, sans-serif;
+        }
+
+        #wrapper #div1 {
+            margin-top: 30px;
+            width: 590px;
+            text-align: left;
+        }
+
+        #wrapper #div1 p {
+            font-size: 20px;
+            font-family: arial;
+            font-weight: bold;
+            margin: 0px;
+            color: #0e385f;
+        }
+
+        #wrapper #div2 {
+            margin-top: 10px;
+            width: 390px;
+            text-align: left;
+        }
+
+        #wrapper #div2 h1 {
+            margin: 0px;
+            font-size: 37px;
+            color: #2E2E2E;
+        }
+
+        #wrapper #div2 p {
+            font-size: 18px;
+            color: #2E2E2E;
+        }
+
+        #wrapper #div2 li {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        #wrapper #div2 li #firstname {
+            width: 49%;
+        }
+
+        #wrapper #div2 li #surname {
+            margin-left: 2%;
+            width: 49%;
+        }
+
+        #wrapper #div2 li input[type="text"] {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 18px;
+            border: 1px solid #BDBDBD;
+        }
+
+        #wrapper #div2 li input[type="password"] {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 18px;
+            border: 1px solid #BDBDBD;
+        }
+
+        #wrapper #div2 li select {
+            padding: 4px;
+            float: left;
+        }
+
+        #wrapper #div2 li a {
+            margin-left: 10px;
+            width: 150px;
+            color: #045FB4;
+            text-decoration: none;
+            font-size: 11px;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 15px;
+        }
+
+        #wrapper #div2 li a:hover {
+            text-decoration: underline;
+        }
+
+        #wrapper #div2 li {
+            color: #2E2E2E;
+            font-size: 18px;
+        }
+
+        #wrapper #div2 #terms {
+            color: #424242;
+            font-size: 11px;
+        }
+
+        img {
+            height: 25%;
+            width: 75%;
+        }
+
+        #wrapper #div2 #terms a {
+            display: inline;
+            margin: 0px;
+        }
+
+        #wrapper #div2 li input[type="submit"] {
+            width: 205px;
+            height: 45px;
+            text-align: center;
+            font-size: 19px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: 'Freight Sans Bold', helvetica, arial, sans-serif !important;
+            font-weight: bold !important;
+            background: linear-gradient(#67ae55, #578843);
+            background-color: #69a74e;
+            box-shadow: inset 0 1px 1px #a4e388;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+            border: 1px solid;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+        }
+
+        #wrapper #div2 #create_page {
+            color: #424242;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        #wrapper #div2 #create_page a {
+            display: inline;
+            margin: 0px;
+            font-size: 13px;
+        }
+
+        #footer_wrapper {
+            width: 100%;
+            clear: both;
+            float: left;
+            margin-top: 30px;
+            min-width: 995px;
+            background-color: white;
+            text-align: left;
+        }
+
+        #footer1 {
+            width: 980px;
+            margin: 0px auto;
+            padding: 0px;
+            border-bottom: 1px solid #E6E6E6;
+            height: 30px;
+            line-height: 30px;
+            font-size: 12px;
+            color: #848484;
+        }
+
+        #footer1 a {
+            color: #365899;
+            display: inline;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        #footer1 a:hover {
+            text-decoration: underline;
+        }
+
+        #footer2 {
+            width: 980px;
+            margin: 0px auto;
+            padding: 0px;
+            font-size: 12px;
+            color: #848484;
+        }
+
+        #footer2 a {
+            color: #365899;
+            display: inline-block;
+            margin: 5px;
+            margin-left: 0px;
+            min-width: 80px;
+            text-decoration: none;
+        }
+
+        #footer2 a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header_wrapper">
+        <div id="header">
+            <li id="sitename"><a href="http://chaitanyanitpawar.github.io">Facebook</a></li>
+            <form action="post">
+                <li>Email or Phone<br><input type="text" name="email"></li>
+                <li>Password<br><input type="password" name="password"><br><a href="">Forgotten account?</a></li>
+                <li><input type="submit" name="login" value="Log In"></li>
+            </form>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <div id="div1">
+            <p>Facebook helps you connect and share with the <br>people in your life.</p>
+            <img
+                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMOEBAQEA8QFRUQEBAQEhISFRcSFRYQFxIWFhUXFRYYHSggGBolGxYVITEhJSkrLi4uFx8zODMsNygtLi0BCgoKDg0OFhAQFy0dHR0rLS0tLy0tLS0tLS0uLS0tLS0tLS0rLS0tKy0tLS0rLS0tLS0tLSstLS0tLS0tLS0tLf/AABEIAKgBKwMBEQACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQIDBAUGB//EADwQAAEDAgQEBAMFBwMFAAAAAAEAAhEDIQQSMUEFIlFhE3GBkTJCoQYUUrHRI2KCksHh8CRTchUWQ1Si/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECBAUDBv/EADQRAQACAgECBQIDBgYDAAAAAAABEQIDBBIhBRMxQVFhcRSRoSIjMlKB4RUkU2Lw8ULB0f/aAAwDAQACEQMRAD8A/bQFQhAhAhAhAhAhAhAhAhAhAhAhAhAhAhEIQIQIQIRSFUQglQEBBCoICCIQEBAQFAVBQFR8/i/tZRo4wYFz8OKz6lIMacRTbyODc2dp52VZcMtOCX56ZaY8Q0sVe+Vki4QEBBMqKhEAVRMoEoIQEBAQEEyoqEBEFRCAgSglBCAgICAgiUBASgQECUBAlAlASh8dxGu8cSa0YlwHjYcCoH4kUqDSGThalJjDhX1Kt4dVe2oPvTMoOWnmxV9eVki4KAgICAgIE3ifRAJjYnyUFQ+Yj6/0VEF94Hrv9UGgUFCXdAPqnYAXDYHvMfRBcFBMoIQULzoB67JRajKgzZc4LhctkT7BLi6Wpq6aqohx6fVBXMeg90EoJPb8kHzPF+IVRVe1tQtFOIDYEmJ5juOy4PiHO269vThNRDqcXj4ThEzFzL3sHXL6bHmSXNa4wIGmy7euerGJc3Zj05Tj8S6IWbFEE9vqlhlPUeyli2VLEQlhCWIPr6Kh6H2QEBBCD4filZw4oAOH1nNGIwwL2txRo1D/AKcCu/IfAc5vilwe9riz/p8TL6Zp4q+2KyRr59v7qCBUHUJUlryghAQP8hBBjX1/zqg8bC8ebVqNb4bg15hjpmTtIGgK52nxHXt2+XEf1bmzh5YYTlM949Xrh0fKY910WmEE6adNPqgqIHy37ae6osJ3hBJcBqgjPOnudP7qUIgnU+wj807CC3zP8Soq+pla4xAaCfopPosd5fG4SplfTqWk1A4u3Icdzvqvk+Ns/wA1GXzLubcb1zj9H24X1rhJhSxQPnoI66pQs6oBqR7pQxxGKpsaXOeABv56Lz2bI149WU1DLDCc5rGLfKcUrNrVKj6YIDmgXtJA1jZfM8/ka9u6Mse8Q7PH15a8IjL/AKfRcK4lSqBtNvK5rQMjhBgdOvou/wAblatsRjhPePZzN2jZhM5ZR2n3dBxjY+azsum63Ixlr3CXY1gmSbEA2OqdMlwn72y8uHLEz30TpkuGgrNPzC3dSpLXCAgICAgIKueBqdUHwnFKNM8RcDVxAz43AVThhVpt8ZwGHd49OgaRL6TDhsNmdnBApYmIykVIr7d1RvUe6tSjh41ijRptLQC5z2sBdJAkEkx6LU5vIy0apzxjv6Njjao251l6RFseA459XxGVIcWZCHQBZ2bbtlXj4bys9+GU5+sPTl6cdc4zj7/+ntLotNk/EtFi4TlLutgkRJcKDGNMRmMtLhY6CVemS4G4sHLZ3NfTSOqdMpcIfV8Sk807EtcG5rc0WlYZxNTEMsJi4v5fI8OYTUotaBLXt1Ijk1vvYL5jhaso5MRcXE/8p29+UeXlM+77dfUuGzfXa3VwFp12SIkticaw5YJMgkZR0V6ZS4Q3FE5Ypv5p1tEdU6fqWNrPMfsomc0kWH9Vaj5O/wAAfVtyM1vf5U/Z+TuTV/Cz4uvy/qlQdw1Kgnkab2v8vUp+z8ndwcX4saBDBTJc4SSQS0D0F1p8rfnq7a8JyltaNOOdzllT52lXyvDwOYOLoNM5ZP7sWC4euOVjt87y5ufo6WXl5YdHVFfd9Lw7iLsQ10UyHsIBBkNIO4JA9l3+Nuy243njOMuVv1RrmOnK3Y6jUdI8QNBiMokjrJK2Lh4VKTggZlzjIAiYHsnV9CmgwjPwi4gzeQnVK1DPFcPp1mhr2SGmRBLb6bLy2a8dkVnF/dnhnlh3xmnN/wBv4f8A23fzv/VeX4TR/px+T0/E7f5pXocFo03B7GEObdpLnGDEaErLDj6cJ6scIiWOW/ZlFTk6KNcyGVIDjJEaELYmPeHj93QoqHMB1AKWM34Zjplg5te6XJ2Udg23ILmkgCQdAOivVJSPCeJyvnlAAcPm6kp2n2O54r2/EyQGyS06u3ACVHtKd1mYtpgEwYzQ61kmFuGwM6e4UGZojoD5q2U8riXFPAeGMphxyhxM5QGkkAdzYrn8zn48bKMZi5bfH4vmxMzNPCa52K4gyqzFBzKeXNhnYith3MOTBVbUqYy1sgfml1nHF5DAYFt684zxjKPdr549MzHw+ud5BerB5H2hxNN7BTDgXte1wAvlgw7N/DmXK8T3avKywme/s3uHrzjPrrt3/wCfmx+z+Jp0nVPEcGueWBpOmQCwB6yXfRa3hW7VhjOMzUzP5vXma88umcY7Q9quWF5zOd8F2/LljVd6Lrs5c1bSk+mIy5fht1y3/uk37r2btcDoR6KA4nZB4/F+F1a75bVaGZQMhzXduTGuy0+Txst9fvJxj4htaN+OqP4bn5ee/wCz9TQ1aO1srlpR4NjHeM5/J7/j/wDb+r1OGYSrTY5lV4eD8ME2EXEldPj6stWPTOfV92pu2Y7JiYx6XWzCtEcrbCBuY8yti5eERDZrY3t0UVKCJQJQJQEEv5QSTYCSlksqGJLhOs6Rrl7jqlJHdp43UQlKwxuN8Gm57mzlFo0J2uvLdsjXhOc+z01YeZlGMOLhPFnVnuY9oBjM3L06HutHhc78RlMTFU2OTxo14xMS9QZv7dF02mmmToQfNSRFUnY27aoLN012QVrUc7YJP/IajySJopXDVCZDgQW2vuOqsx7pDZRRAQEBBR7A4XAMgi/RUYnDAXpuLTlyiLgeiX8pSG1Xh2UtB5Rzj8XcJUL3fNcaluIeZBljSMtyA0aEbXJIXzfjGE+bGV+sfk63Cn93VVTt4Nwyk6nSqPoYd1QEOFXIx7xlP7PniZaABO0Bdvi4dOnGLumhyZvblUU9lxWy8HmU/s5R0z1h05hf6LRnw7j3fT+ra/Gbvn9Fz9mqX46v8w/RT/DeN/Iv4zb8u3CxSApEQ1oDGFxnMI69Vu44RjjEY+zVyynLKZn3dJotOrW6Rpsrcp2Z/dGWgRAIEHYq3JUM/BDcoa9/LNtZnql/RKUDKvLLwRJzdSNtFewllV7codTFzBymQB1KTXyf0S3GNMTmbJLRIhOmS4bMeDoQbx6qKtKBKAghBEoLBpOlkGGKlzm0w8ibmBsNpSPmkn4dApgaKXKquYbwrEjzeOBvgPBcAYBbJuXA2ELV5nT5OUZTUNjixl5sTjDy+AuArElwB8MBoO5Jv7LkeD9MZZ3Pduc2Mpwjpjs+nY47+/VfQ9nLaKCHCVQaIQSoMnUmh3iGxDYmbR3S+xTDC8SpVnFrHgkXjSR26heGvka9kzjjNzD1z0Z4Y9WUdnYth5KueBcmI6oMnYpgnm0GYxeyVJcK/e27Bx5c2h0TpSwYsGOV92k6ef6JRbB1cS2GOAIJFtInX2WVSXDPEzXpEMcaZcYzkXib27xC8t2ucsZxjKvs9NecY5dUxbyv+guHw1mn+A/UzdcvLwfXlNznNtz8fPp0fq2wPB30qjagrCA6XANIzC8g3hbHH8PjRneOc/b2ee3l+ZjU4fq9klb7TaNdp2/qitlBhVAfbYGZ79lY7Hq58OC0+G4uJAkPO46KzHvCR8OkNAuBcKKNO2iCZQSgg36IMXYVhi0Qc3La6sTKVCngvb8L55pObp0VuJKk+8ub8bCJdAy3t1Sr9C2tOs13wkGLeqlUtrx3UF2M6pIuoObCuzF75MTlAO0dFZ9oSPV0yoog+cxfBgahe7EmXuMcuYjtrZc/b4Zr25TlllLcx5uWGMYxjCf+2iReufIsH6ry/wAI0x/5Syjn5/yx+r1cDhzQY1jnl8fMRfVdLVr6MIxibpqbM+vLqqnas2Cj2TcG40QVfVyi8d77KjE45v0nUaK9MpcM+KVZw9UtBMsIga3t/VeHIuNeVR7PbRU7Me/u+d4O/wD1FGJPxC2zS3XykBfO+Fxl+I9Pu6nKrypfU1KT3Fwzw0gRGo9V9RbjSNwzCTPMSADJmwS5KaimBoBpGmync7LKgXRugxqVQbA+ZShQmVUEBKFSlDYdlFSKp3b7JQlhB/RSbHPi6ejnOjJz6wAALz2V6oiJOmZns5MHxOnVfkaHAwS0m2Ybx6fRamjm6t+c44y2NnFz149U/wDT0IPbzOq22uq+qGjmI991aGbsYwTeYMGBMEq9KXCHYsDNDHnLGg1nonSWOxUTyOsAdNZTpLDiwJlrhDQdP8unSWkYtvWLZriLKUWqWU3xEfiEGFbmDtKabajYvmEkkmxA7KTUneHRQrh+kg9DYqTFLEvmONV3Or1Ie6KcBsEiDEnT0XzfiXJzjfWOVRDr8XXHlRcR3fScPq56VN34mgnz3Xf1ZdWEZfMOZtx6c5htVqBoLnGAF6RDzc/PU6saCIP4gr2hO8tqVBrPhbvPqlzK9lqlVrQS4gRqpQ56uImQxjiQJGwPqsqSZQzxHAy5rbWOpB3SaFXsBmXudIggWHmn2g/qqcO06tGmXWZHdXuUuKTfwjSNNkTs8jidTEZy2nTfkAAzNIl1r66Ln8qOXl+zqqI+fdu6PIxi8puXFSwmIpEOZRqNIGoym3QjdczVweZqznLCYufq28t+jOKynt9nr4Q1ajS6pNN92wND0dGy72idnRHmRF/RzN0YdX7E3DYF7NgQ1syLEnpC9u0vPu68NjG1DGhgGDYwVhOMwRMS2eyRCK5i3rFrKoluoB6oJIjZIEKhKCpKDYFYqSggj3GhQYcQYalKq0CC9jmydPhKw249WGWPzDPVl0545fV8/wAAGevRI2Y958smX83L5zwnCfPv4h1eZNap+svoKty4PqgZTmhtob3+i+nj7ONKzaNI6QS7ngmZ7/mlzBUNskbAeilrRKAgglBBAOoCtoydhmn5YMRItZLkqFW0nMMteYDYg3E7FW79iphbE45tBmeqRNhy7noF4b9uOrGcsvR66teWyah8pjcUyq97xlZn1GaST1PdfMcvfG7ZGWOH93Y06p14dN297g3F6Tg2iGhrg3laDIMdCu5xOZr21hEdM/Dn8jjZ4XndvQpsLznqWERkOg7ldGezSWfigJDQXECYGnupS2g03vmXZQQLDUHe6doTvK7MM0GYkkAEm8pclNlFUexpuQrZTBzp0EDZVESqJlAUDxLQYjr+SUIVEEoIqUA+WkGXDUWMa6qXRVsTUqUp+ZtgB8w/VZVEp3hrSqB0wZg36z3UmKX1Xe0j1Gqgu6oCBe4UiO6s5WSEoKnyQbhYqSgkIPG4rhMVUe4NA8OwaA7LIgTm9ZC53K08nbMxhnEY/q3dG3RriLiZlxDhGJBBDGgjQtfBH0Whr8K3656sc4iWxPM05RUxMve4XTq5D94Dc0wCLkt7+q7OmNsYVsm5+jn7p1zleEVDqfh2nVo0iRYwva5eVQ4OJvfh6T3NdIDWtaDc5i6PXVeHK3Tr1ZZx6w9ePrjPZGM+ji4JjXvqOpvdm5S4E6yCJH1Wh4bzNm6csc5um1y9GGGMZY9nsLrtAQRKISqBKUWzfSa6zmtPmJSYv2ImvdT7pT/2mfyhKW5Wo4WmHAhjAeoAB90+0FzPq6KmHzOlzjERl2UuirasYGiAIiynqVSVRDSSTIjp3UFKlYCwueisQWwc4nU+mytUlolUJQQgkFBEoEoEoNaTpsTpELGSFaoIJnrsrAj7u2Q5jg0zmMfN2cl/JTKlX8Qw5sOA+GdR1Vqj1Xa4EiyCzRMnpqFBJpnoljJ3kqN1iogljrhBugIMa2JDSWjmcBOUapEChFR08waCBEXcDv8A1Tsnd5nH67DT8EvcXgtIy/iGmbsub4hu0+XOGc/k3eJr2dUZxHZ53B6raVXPUJENhsDlk/FmXL8M26deUznNS2+Vhnnh04vde0PBLajiHEOzDTyC+nxyiYiYcjKJiaVdQdeKjhMR2WV/Rj/UcyoJhwNhAI33KdjuGq9syyQADynU72So9hLcU3QyDEmbQpS22Bm4QJQAg61iogKAUHEskFRCBKBKCQUEEoEoCCCgnPOoB7zdShBj8J/NUUrUw5vxEHSRqO6WUzbWg5XTrlaT8yte6W3I7KK1pYiBBDj31KkwWqcSfwhOlbXBRBKEFKHn4vj/AIb3M8OQwjOQf3QeUeRXM5HiOGnZ5cx927q4k7MOq/X0ejUrZyGsvIGYzBa0iQV0o9Lac3dNaFEMAAvAiTqfVLs9GiDzKnAaDnOcWGXEuPMbla2XE05TOU4RMz9HvHI2xERGXowrcCoCwY7vzFI4XH/04/Inlbv5nVhaDaTAxghrZgarYwxjCIxxioeOWU5TMz7tVmxQgIKvaHCCAZU7wMX4aJLHFpiBuB6LK/lK+EHEFk522Ecw3PklWO7CkOuDKwy7LDxhx9xqjlGTPkj5tYn3XHjxOZ3+X09rp0fwceXd96t9Cuu56rnAakDzQclXiLBYOBkxO0rKMZScoY0q7TfmIzZbD6+SswK1MUTOWm6Aco790iPlLVdUfeGCxESdQrEQD3VOaA3bLP1lOx3HeJeMmgy+e8q9hH7S92aCP+SdjuftP3Ph/wDr9E7HcDqlrN0M3+bZTsdwVH2lgvMwdNYSoO43EHlmm4Zp7x5q0WNxbTGokwJG6UWuzENOjhrHqpS26adHNfZYzI0fhWmJGmnY9VOqSoZAOALHkw1pd4h0PUFJmI7rETM1Dg4ZxZtSoGZSA8EMcd7ExG0gErR0+I6t2ycMf6fVtbOJnrw6pm69XVUsSL6roNNtKipBVCUHyePkVK8wczy6QZGV1gD0IAEr5PxDXP4mf2o/a/T2dvjz+6jtVPreHUclNk5S7IwOc24JDYkH0X02v+CInvTkZ1OczHa3SvRgio/KJUgc5rOPQfVZUigQFREoCAghAQEFaDG0y5+YNB+KTYrHPKIjuuOMzPZ8y3L4g5v2fjTm/cmZ918rj5f4y77W7k9Xlenen17h4mVzalv3TIK+pxyifRw5xnH1c1WiwcsOMGZcbAlZxaUq2m0aNGsrK5Sm9SuCIaCPosK791ZSqCCCVQQEoJShEpQSlBKUNKLQ4wfNSZob/dWW5G2Mi2/VY3K1Cv3QD4XOHNmsde3kl/JRlqN0c13NvaGp2TuPJqMqtIycrmgnSCCMyxzi8Zj5ZYTWUPluBjNWw20S7+WmWwPf2XzPhuv/ADXr/Dbs8rL91lPz/wBvrnNE3C+ocVzhZIlBxcTwj6zQ1lTJzAutMiDbtsvDfqnbh09U4/Z66dka8rmOpxt+zdQf+dg/g/uuXPg+uZuc5bn4/wD2fq7OFcJqYd+Y1gWkEFgbAJ2OtoW3xuJ5E9s5mPiXjv5Ebca6e/y9V9UN1Pot5quZzy4yfQdFapEK0CUIlKBKCUCUESlBKBKDhx3DRXe0mq5oAiLEed91q8nh4ciuuZ7fEtjTyMtUT0xE2xPA2f8AtP8A5W/otP8AwfR9fze34/P4j9WvD8F4BcW1HkOEEOAHqAFucbh4aInpmXju5OW2riHattrkqiELJUCVUJQJQJQRKBKKSiEoN8K4CSXAbLHJYauxTes+QKx6ZW2ZxnRh9TCvSluijUzCfopKxLxuLcOr1nnLUZ4cDKwlwvF5jW60OTxdu6e2zpj4r+7b0b9evH+G5+XBU4JWaJLqI6fFr2Wjj4NljN47K/p/dsTzsPfGf0/+IDMcLNrMgaTJMeZW/jxeTEV50fl/d4Tv489/L/V74XQaQg0onmH+XhSfQh0rFXO/E/hA9Z1WXSWxJ3OqqCAgSggoEoIQJQJQQgK0CUIREIqZVREoCBKCECUCUBBEoEoCBKAUCUCUJSx0EERMqTCN6uIe2xDQfe3ksahbc7nlxkmT+Xksk7qkorpCikoNKHxD1jzWM+hDXEuhusSkeqy5VkgUCUBBEoglKgqwEqiJQEQlQJVESgIIlAlAQRKBKBKCJQSgiUJRKBKBKBKBKISikoEoICCZQUJQdYKxUQAUFn1ZFwZG4j8lKotTMdiQqCCECVaEFEJVLJQtEoBKAgiUCUCUESgiUCUCUEIhKKSlISikoiJRSUAlBEoEoCAgICqCiioqVB1ArFUygSiIVEKgoCCFQUBURKAgIIlAQRKAUESgSgiUCUCUQlBCKIhKBKBKCJQJQJQJQJQJQJQQgSgqSg6wUURRECUESgSgSgglAlBEoiJRSUoEEEoEoIJQJQJQRKISgSgiUCUBBCBKBKBKoiUCVAlAlAlAlAlAlAlUVKDrBUVEoEoEoIlAlAlBEoEoIlAlAlBEoIJQJREEopKISgiUCUCUESgSgEoIlAlAlUJQRKBKBKgSqEoEoEoEoEoKkoP/2Q==">
+        </div>
+
+        <div id="div2">
+            <h1>Create an account</h1>
+            <p>It's free and always will be.</p>
+            <li><input type="text" placeholder="First Name" id="firstname"><input type="text" placeholder="Surname"
+                    id="surname"></li>
+            <li><input type="text" placeholder="Mobile number or email address"></li>
+            <li><input type="text" placeholder="Re-enter mobile number or email address"></li>
+            <li><input type="password" placeholder="New password"></li>
+            <p>Birthday</p>
+            <li>
+                <select>
+                    <option>Day</option>
+                </select>
+                <select>
+                    <option>Month</option>
+                </select>
+                <select>
+                    <option>Year</option>
+                </select>
+                <a href="">Why do I need to provide my date of birth?</a>
+            </li>
+            <li><input type="radio">Female <input type="radio">Male</li>
+            <li id="terms">By clicking Create an account, you agree to our <a href="">Terms</a> and that <br>you have
+                read our <a href="">Data Policy</a>, including our <a href="">Cookie Use</a>.</li>
+            <li><input type="submit" value="Create an account"></li>
+            <li id="create_page"><a href="">Create a Page</a> for a celebrity, band or business.</li>
+        </div>
+
+    </div>
+
+    <div id="footer_wrapper">
+
+        <div id="footer1">
+            English (UK) <a href="">हिन्दी</a><a href="">ਪੰਜਾਬੀ</a><a href=""> اردو</a><a href="">தமிழ்</a><a
+                href="">বাংলা</a><a href="">मराठी</a><a href="">తెలుగు</a><a href="">ગુજરાતી</a><a href="">ಕನ್ನಡ</a><a
+                href="">മലയാളം</a>
+        </div>
+        <div id="footer2">
+            <a href="">Sign Up</a><a href="">Log In</a><a href="">Messenger</a><a href="">Talkerscode</a><a
+                href="">Mobile</a><a href="">Find Friends</a><a href="">Badges</a><a href="">People</a><a
+                href="">Pages</a><a href="">Places</a><a href="">Games</a><a href="">Locations</a><a
+                href="">Celebrities</a><a href="">Groups</a><a href="">Moments</a><a href="">About</a><a href="">Create
+                Advert</a><a href="">Create Page</a><a href="">Developers</a><a href="">Careers</a><a
+                href="">Privacy</a><a href="">Cookies</a><a href="">Ads</a><a href="">Terms</a><a href="">Help</a>
+            <p>Design By DarkLordDevil</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
